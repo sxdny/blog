@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		
+	</head>
+
+	<body>
+		
+		<main>
+			<article>
+				Hello this is a Java tutorial.
+				<!-- Aqui dentro van las cosas del blog y tal: el título, la descripción y eso -->
+			</article>
+		</main>
+	</body>
+</html>
