@@ -1,5 +1,5 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { SITE_TITLE } from "../consts";
 ---
 
 <!doctype html>
@@ -71,7 +71,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 		setInterval(() => {
 			const randomIndex = Math.floor(Math.random() * sentences.length);
-			randomSentence.innerText = sentences[randomIndex];
+			if (randomSentence) {
+				randomSentence.innerText = sentences[randomIndex];
+			}
 		}, 7000);
 	</script>
   <body>
