@@ -1,0 +1,29 @@
+---
+// Hacer que yo meta en las props key y value y que el componente se encargue de hacer el loop y mostrarlo
+const links = Astro.props;
+---
+
+<div class="w-full flex flex-col items-center">
+  <nav class="max-w-screen-md w-full p-4 flex justify-between">
+    <a href="/">
+      <h1 class="text-white hover:underline underline-offset-4">Sidney Silva</h1>
+    </a>
+    <ul class="flex gap-3">
+      <li
+        class="hover:underline underline-offset-4 text-neutral-400 hover:text-white"
+      >
+        <a href="https://sxdny.dev">My Website</a>
+      </li>
+      <li
+        class="hover:underline underline-offset-4 text-neutral-400 hover:text-white"
+      >
+        <a href="https://portfolio.sxdny.dev">Portflio</a>
+      </li>
+      <li
+        class="hover:underline underline-offset-4 text-neutral-400 hover:text-white"
+      >
+        <a href="cv.pdf">CV</a>
+      </li>
+    </ul>
+  </nav>
+</div>
