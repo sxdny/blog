@@ -1,36 +1,43 @@
 ---
 import Navbar from "../components/Navbar.astro";
 
-const {frontmatter} = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-		Sidney Silva | {frontmatter.title}
-	</title>
-</head>
-<body class="bg-black flex flex-col items-center">
-  <Navbar />
-  <main class="max-w-screen-md w-full p-4 flex flex-col gap-6">
-    <header class="flex flex-col gap-2">
-			<h1 class="text-4xl text-white font-semibold">
-				{frontmatter.title}
-			</h1>
-			<p class="text-neutral-300">
-				{frontmatter.description}
-			</p>
-			<p class="text-neutral-400 text-sm">
-				{frontmatter.author} · {frontmatter.date}
-			</p>
-		</header>
-		<hr class="h-px my-4 bg-neutral-200 border-0 dark:bg-neutral-700">
-		<div class="text-white">
-			<slot />
-		</div>
-  </main>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Sidney Silva | {frontmatter.title}
+        </title>
+    </head>
+    <body class="bg-black flex flex-col items-center">
+        <Navbar />
+        <main class="max-w-screen-md w-full p-4 flex flex-col gap-6">
+            <a
+                href="javascript:history.back()"
+                class="text-white underline underline-offset-4"
+            >
+                go back
+            </a>
+
+            <header class="flex flex-col gap-2">
+                <h1 class="text-4xl text-white font-semibold">
+                    {frontmatter.title}
+                </h1>
+                <p class="text-neutral-300">
+                    {frontmatter.description}
+                </p>
+                <p class="text-neutral-400 text-sm">
+                    {frontmatter.author} · {frontmatter.date}
+                </p>
+            </header>
+            <hr class="h-px my-4 bg-neutral-200 border-0 dark:bg-neutral-700" />
+            <div class="text-white">
+                <slot />
+            </div>
+        </main>
+    </body>
 </html>
