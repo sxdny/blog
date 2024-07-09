@@ -1,12 +1,30 @@
 ---
 import { SITE_TITLE } from "../consts";
 import Default from "../layouts/Default.astro";
-import PostsView from "../components/PostsView.astro";
+import PostPreview from "../components/PostPreview.astro";
+
+const posts = await Astro.glob("../pages/posts/*.md");
 ---
 
 <Default title="Sidney Silva | Blog">
-  <!-- Mostramos directamente las publicaciones -->
-   <div>
-
-   </div>
+    <section>
+        <header class="flex flex-col gap-1">
+            <h1 class="text-white text-3xl font-bold">Last posts</h1>
+            <p class="text-neutral-300 text-sm">
+                Those are the last posts that I have.
+            </p>
+        </header>
+        <section>
+            {
+                posts.map((post) => (
+                    <PostPreview
+                        title={post.frontmatter.title}
+                        description={post.frontmatter.description}
+                        date={post.frontmatter.date}
+                        url={post.frontmatter.url}
+                    />
+                ))
+            }
+        </section>
+    </section>
 </Default>

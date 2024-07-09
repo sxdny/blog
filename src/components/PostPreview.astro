@@ -1,4 +1,13 @@
 ---
-// Mostramos un pequeño snippet del post
+const { title, description, date, url } = Astro.props;
 ---
 
+<a href={url}>
+    <div
+        class="flex sm:flex-row flex-col sm:gap-0 gap-2 sm:justify-between text-sm my-3"
+    >
+        <h1 class="text-white underline underline-offset-4">{title}</h1>
+
+        <p class="text-neutral-400">{date}</p>
+    </div>
+</a>

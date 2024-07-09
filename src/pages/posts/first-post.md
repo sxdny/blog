@@ -1,16 +1,11 @@
 ---
 layout: ../../layouts/BlogPost.astro
-title: La magia de la lectura
+title: primera publicación del nuevo blog
 author: Sidney Silva
-description: Cómo el hábito de la lectura me ha cambiado completamente la vida.
-date: 25 Jun 2024
+description: Si, que si que si que si que si
+date: 9 Jul 2024
+url: posts/first-post
 ---
 
-BBL Drizzy
-
-# This is the bbl drizzy master
-
-```js
-let pato = 3;
+Basta de tonterias, a ver si es verdad que esta vez si que cumplo el publicar cada semana o algo xd.
 ```
-
