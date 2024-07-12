@@ -4,6 +4,16 @@ import Navbar from "../components/Navbar.astro";
 const { frontmatter } = Astro.props;
 ---
 
+<style is:global>
+    blockquote {
+        background-color: rgb(31, 31, 31);
+        padding: 1rem 1rem;
+        border-left: 1px solid white;
+        font-style: italic;
+        font-size: 1.1rem;
+        }
+</style>
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -12,7 +22,7 @@ const { frontmatter } = Astro.props;
         <title>
             Sidney Silva | {frontmatter.title}
         </title>
-    </head>
+    </head>   
     <body class="bg-black flex flex-col items-center">
         <Navbar />
         <main class="max-w-screen-md w-full p-4 flex flex-col gap-6">
@@ -20,7 +30,7 @@ const { frontmatter } = Astro.props;
                 href="javascript:history.back()"
                 class="text-white underline underline-offset-4"
             >
-                go back
+                Go back
             </a>
 
             <header class="flex flex-col gap-2">
@@ -35,9 +45,10 @@ const { frontmatter } = Astro.props;
                 </p>
             </header>
             <hr class="h-px my-4 bg-neutral-200 border-0 dark:bg-neutral-700" />
-            <div class="text-white">
+            <div class="text-neutral-200 flex flex-col gap-4 leading-relaxed">
                 <slot />
             </div>
         </main>
     </body>
 </html>
+
