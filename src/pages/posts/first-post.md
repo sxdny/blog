@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/BlogPost.astro
-title: no tengas miedo
-author: Sidney Silva
-description: Cómo el miedo me ha privado de muchas cosas y oportunidades
-date: 12 Jul 2024
-url: posts/first-post
+title: 'No tengas miedo'
+author: 'Sidney Silva'
+description: 'Cómo el miedo me ha privado de muchas cosas y oportunidades.'
+date: '12 Jul 2024'
+url: 'posts/first-post'
 ---
 
-Buenos dias,
+Buenos días,
 
 Me he pasado estos últimos dias del porqué las cosas no me salen bien o de la manera en la que espero que salgan y he llegado a la conclusión de que no es por falta de capacidades, ni de experiencia ni cualquier otra cosa. Es claro que puedo flaquear en cualquiera de estos dos aspectos pero considero yo que el que me afecta (y creo que también a la mayoría de personas) es: **el miedo**. 
 

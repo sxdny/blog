@@ -1,54 +1,64 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
 <style is:global>
-    blockquote {
-        background-color: rgb(31, 31, 31);
-        padding: 1rem 1rem;
-        border-left: 1px solid white;
-        font-style: italic;
-        font-size: 1.1rem;
-        }
+  blockquote {
+    background-color: rgb(31, 31, 31);
+    padding: 0.5rem 1rem;
+    border-left: 1px solid white;
+  }
 </style>
 
-<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            Sidney Silva | {frontmatter.title}
-        </title>
-    </head>   
-    <body class="bg-black flex flex-col items-center">
-        <Navbar />
-        <main class="max-w-screen-md w-full p-4 flex flex-col gap-6">
-            <a
-                href="javascript:history.back()"
-                class="text-white underline underline-offset-4"
-            >
-                Go back
-            </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
 
-            <header class="flex flex-col gap-2">
-                <h1 class="text-4xl text-white font-semibold">
-                    {frontmatter.title}
-                </h1>
-                <p class="text-neutral-300">
-                    {frontmatter.description}
-                </p>
-                <p class="text-neutral-400 text-sm">
-                    {frontmatter.author} · {frontmatter.date}
-                </p>
-            </header>
-            <hr class="h-px my-4 bg-neutral-200 border-0 dark:bg-neutral-700" />
-            <div class="text-neutral-200 flex flex-col gap-4 leading-relaxed">
-                <slot />
-            </div>
-        </main>
-    </body>
+    <!-- Google Fonts: IBM Plex Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>
+      blog / {frontmatter.title}
+    </title>
+  </head>
+  <body class="bg-neutral-900 min-h-screen p-5 flex flex-col items-center">
+    <div class="flex-1 max-w-[55rem] w-full flex flex-col h-full items-center">
+      <Nav />
+      <a
+        href="javascript:history.back()"
+        class="text-white underline underline-offset-4 self-start"
+      >
+        ← Go back
+      </a>
+      <div class="flex-1 w-full mt-8">
+        <header class="flex flex-col gap-2">
+          <h1 class="text-3xl text-white font-semibold font-mono">
+            {frontmatter.title}
+          </h1>
+          <p class="text-neutral-400 leading-relaxed tracking-wide">
+            {frontmatter.description}
+          </p>
+          <p class="text-neutral-500 text-sm font-mono">
+            {frontmatter.author} · {frontmatter.date}
+          </p>
+        </header>
+        <hr class="h-px my-8 bg-neutral-200 border-0 dark:bg-neutral-700" />
+        <div class="text-neutral-300 flex flex-col gap-4 leading-relaxed">
+          <slot />
+        </div>
+      </div>
+      <Footer />
+    </div>
+  </body>
 </html>
-

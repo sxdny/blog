@@ -1,0 +1,30 @@
+---
+const posts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
+---
+
+<main class="flex flex-col gap-8">
+  <ul class="w-full">
+    {
+      posts.map((post: any) => (
+        <li class="flex justify-between items-center w-full">
+          <header>
+            <a
+              class="font-mono text-neutral-100 text-lg underline underline-offset-4"
+              href={post.frontmatter.url}
+            >
+              {post.frontmatter.title}
+            </a>
+            <p class="text-neutral-400 mt-1 text-sm">
+              {post.frontmatter.description}
+            </p>
+          </header>
+          <footer>
+            <p class="text-neutral-400 text-sm font-mono">
+              {post.frontmatter.date}
+            </p>
+          </footer>
+        </li>
+      ))
+    }
+  </ul>
+</main>
