@@ -6,7 +6,7 @@ const posts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
   <ul class="w-full">
     {
       posts.map((post: any) => (
-        <li class="flex justify-between items-center w-full">
+        <li class="flex flex-col md:flex-row justify-between md:items-center w-full gap-2">
           <header>
             <a
               class="font-mono text-neutral-100 text-lg underline underline-offset-4"
@@ -14,7 +14,7 @@ const posts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
             >
               {post.frontmatter.title}
             </a>
-            <p class="text-neutral-400 mt-1 text-sm">
+            <p class="text-neutral-400 mt-2 text-sm">
               {post.frontmatter.description}
             </p>
           </header>
