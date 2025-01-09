@@ -3,7 +3,7 @@ const posts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
 ---
 
 <main class="flex flex-col gap-8">
-  <ul class="w-full">
+  <ul class="w-full flex flex-col gap-4">
     {
       posts.map((post: any) => (
         <li class="flex flex-col md:flex-row justify-between md:items-center w-full gap-2">
@@ -24,7 +24,7 @@ const posts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
             </p>
           </footer>
         </li>
-      ))
+      )).reverse()
     }
   </ul>
 </main>

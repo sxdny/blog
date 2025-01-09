@@ -20,4 +20,3 @@ Es normal que tengamos miedo todos al hacer algo que no estamos acostumbrados o 
 Asi que espero que tú que estés leyendo esto lo tengas en cuenta a la próxima que vayas a hacer algo. Arriésgate, sé tu mismo y no tengas miedo. No sabes las cosas que te estás perdiendo por tener miedo de hacer las cosas.
 
 > El miedo solo sirve para perderlo todo. –Manuel Belgrano
-```

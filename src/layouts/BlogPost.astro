@@ -5,14 +5,6 @@ import Footer from "../components/Footer.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<style is:global>
-  blockquote {
-    background-color: rgb(31, 31, 31);
-    padding: 0.5rem 1rem;
-    border-left: 1px solid white;
-  }
-</style>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,6 +24,25 @@ const { frontmatter } = Astro.props;
       blog / {frontmatter.title}
     </title>
   </head>
+
+  <style is:global>
+    .prose pre {
+      @apply border border-neutral-800 p-3 text-neutral-100
+    }
+
+    .prose a {
+      @apply text-white underline underline-offset-4
+    }
+
+    .prose p {
+      @apply text-neutral-300 my-2 tracking-wide
+    }
+
+    .prose blockquote {
+      @apply bg-neutral-800 px-3 py-2 border-l border-neutral-700
+    }
+  </style>
+
   <body class="bg-neutral-900 min-h-screen p-5 flex flex-col items-center">
     <div class="flex-1 max-w-[55rem] w-full flex flex-col h-full items-center">
       <Nav />
@@ -54,7 +65,7 @@ const { frontmatter } = Astro.props;
           </p>
         </header>
         <hr class="h-px my-8 bg-neutral-200 border-0 dark:bg-neutral-700" />
-        <div class="text-neutral-300 flex flex-col gap-4 leading-relaxed">
+        <div class="text-neutral-300 flex flex-col gap-4 leading-relaxed prose">
           <slot />
         </div>
       </div>
