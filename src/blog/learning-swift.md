@@ -1,10 +1,10 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: 'Learning Swift: Day 1'
-author: 'Sidney Silva'
-description: 'My first day following the 100 day Swift challenge.'
-date: '9 Jan 2025'
-url: 'posts/learning-swift'
+author: Sidney Silva
+description: My first day following the 100 day Swift challenge.
+pubDate: '01/09/2025'
+tags: [iOS Development, Learning]
+url: posts/learning-swift
 ---
 
 ```swift
@@ -19,7 +19,7 @@ I asked for a resource to learn iOS development and isak sent a link to [hacking
 
 I went through the Day 1 of the course, where you can learn about declaring variables, how they work, types, etc; and built my very first project: A Celcius to Fahrenheit program. It'a a very simple project but it's really useful to learn the basics and in this post, I will explain a little bit about the program.
 
-Here's the code:
+Here is the code:
 
 ```swift
 import UIKit

@@ -1,9 +1,9 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: 'No tengas miedo'
 author: 'Sidney Silva'
 description: 'Cómo el miedo me ha privado de muchas cosas y oportunidades.'
-date: '12 Jul 2024'
+pubDate: '07/12/2024'
+tags: ["Thinking"]
 url: 'posts/first-post'
 ---
 

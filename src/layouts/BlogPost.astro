@@ -30,16 +30,40 @@ const { frontmatter } = Astro.props;
       @apply border border-neutral-800 p-3 text-neutral-100 sm:text-base text-sm
     }
 
+    .prose h1 {
+      @apply font-mono sm:text-2xl text-white font-medium text-xl
+    }
+
+    .prose h2 {
+      @apply font-mono sm:text-xl text-neutral-200 font-medium text-lg
+    }
+
     .prose a {
       @apply text-white underline underline-offset-4
     }
 
+    .prose p > code, li > code {
+      @apply bg-neutral-700 text-sm px-1 py-1 rounded
+    }
+
     .prose p {
-      @apply text-neutral-300 my-2 tracking-wide sm:text-base text-sm leading-relaxed
+      @apply text-neutral-300 my-2 tracking-wide sm:text-base text-sm leading-loose
     }
 
     .prose blockquote {
       @apply bg-neutral-800 px-3 py-2 border-l border-neutral-700
+    }
+
+    .prose ul {
+      @apply ml-5 list-decimal leading-loose flex flex-col gap-3
+    }
+
+    .prose li {
+      @apply list-item ml-5 sm:text-base text-sm
+    }
+
+    .prose hr {
+      @apply my-6 bg-neutral-700 h-px border-0
     }
   </style>
 
