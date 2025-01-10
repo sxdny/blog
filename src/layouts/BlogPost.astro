@@ -85,7 +85,7 @@ const { frontmatter } = Astro.props;
             {frontmatter.description}
           </p>
           <p class="text-neutral-500 text-sm font-mono">
-            {frontmatter.author} · {frontmatter.date}
+            {frontmatter.author} · {frontmatter.pubDate.toLocaleDateString()}
           </p>
         </header>
         <hr class="h-px my-8 bg-neutral-200 border-0 dark:bg-neutral-700" />
