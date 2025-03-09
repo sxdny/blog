@@ -17,19 +17,19 @@ Pero bueno, el tiempo pasó, y durante los 3 años siguientes he ido creando dif
 
 # Aprendiendo Angular
 
-Mi primera vez con Angular después de esa clase que tuve hace tiempo no fué muy buena.
+Mi experiencia con Angular después de esa clase que tuve hace tiempo, no fué muy buena.
 
-Empezé a ver un curso de un video que pasaron por un grupo de Whatsapp y no me gustó mucho. No me refiero al video, el video estaba bastante bien, lo que no me gustó en ese entonces fué Angular en si. La sintáxis era bastante extraña y la manera de crear componentes, estructuras las carpetas, el cómo se hacían las cosas no me gustaba nada.
+Empezé a ver un curso que pasaron por un grupo de Whatsapp y no me gustó mucho. No me refiero al video, el video estaba bastante bien, lo que no me gustó fué Angular. La sintáxis era bastante extraña y la manera de crear componentes, estructurar las carpetas, etc no me terminaba de convencer.
 
 Y molestado por Angular, decidí no seguir... Hasta que me encontré otro curso.
 
-# Nuevo curso
+# Bajó un nuevo curso del cielo
 
-Unos cuantos meses después me topé nuevamente con un curso de YouTube de un canal llamado: Gentleman Programming. Nunca antes había visitado dicho canal pero decidí darle una oportunidad.
+Unos cuantos meses después me topé nuevamente con un curso de YouTube de un canal llamado: [Gentleman Programming](https://www.youtube.com/watch?v=R1QePsia5xk&t=33863s). Nunca antes había visitado dicho canal pero decidí darle una oportunidad.
 
 El curso es bastante largo, la duración es de aproximadamente 12h, pero no me importó y empezé a verlo en x2 de velocidad.
 
-La verdad es que es uno de los mejores cursos que he visto en Internet. No he visto muchos pero la manera en la que explica las cosas y cómo muestra ejemplos, es muy buena. La gran mayoría del curso se me hizo muy pesado, ya que explicaba cosas muy específicas que sabía que existían pero que nunca había llegado a profundizar.
+La verdad es que es uno de los mejores cursos que he visto en Internet. No he visto muchos, pero la manera en la que explica las cosas y cómo muestra ejemplos, es muy buena. La gran mayoría del curso se me hizo muy pesado, ya que explicaba cosas muy específicas que sabía que existían, pero que nunca había llegado a profundizar. Pero al final, valió la pena.
 
 Lo que vi en el curso fué:
 
@@ -39,19 +39,19 @@ Lo que vi en el curso fué:
 - Formularios
 - Testing (me falta por verlo)
 
-He aprendido muchos cosas, no solo de Angular sino que también más sobre la programación orientada a objetos y como he dicho antea, patrones de diseño y buenas prácticas.
+Lo que pasa, es que no me empezé realmente a familiarizar con los contenidos del curso hasta que hice un proyecto para manejar tareas ([link](https://vercel.com/sidney-silvas-projects/angular-todos/5UV8o8G8CHszo4sSAVL5ogdi2KPM)). Todo me hizo "click" en el momento que iba aplicando mis conocimientos.
 
-Aunque no me empezé realmente a familiarizar con los contenidos del curso hasta que hice un proyecto para manejar tareas ([link](https://vercel.com/sidney-silvas-projects/angular-todos/5UV8o8G8CHszo4sSAVL5ogdi2KPM)). Todo me hizo "click" en el momento que iba aplicando mis conocimientos.
-
-Por eso ahora, voy a explicar un poco el cómo funciona el proyecto.
+Por eso, voy a explicar a continuación un poco el cómo funciona el proyecto.
 
 # Proyecto Angular Todos
 
-La idea del proyecto es simple, gestionar tareas y tenerlas todas en un mismo sitio. El usuarios puede crear nuevas tareas, marcarlas como completadas o no y también las puede eliminar.
+La idea del proyecto es simple, gestionar tareas y tenerlas todas en un mismo sitio. El usuario puede crear nuevas tareas, marcarlas como completadas y también las puede eliminar.
 
 ## Gestión de las tareas con Servicios
 
-Lo primero que tenía que hacer es tener un lugar donde guardar todas las tareas para toda la aplicación. Aquí es donde uso los **Servicios**. Los servicios permiten separar la lógica de los componentes para tenerlo todo en un mismo lugar y proporcionar la información necesaria a los componentes que lo necesitan. Cuando lo hacemos, decimos que inyectamos el servicio a un componente.
+Lo primero que tenía que hacer es tener un lugar donde guardar todas y que estén disponibles en toda la aplicación.
+
+Aquí es donde uso los **Servicios**. Los servicios permiten separar la lógica de los componentes para tenerlo todo en un mismo lugar y proporcionar la información necesaria a los componentes que lo necesitan. Cuando lo hacemos, decimos que inyectamos el servicio a un componente.
 
 En mi caso, he creado un componente para las tareas (_todos_ en este caso porqué lo quería hacer en Inglés) llamado `todos.service.ts`. El contenido final del servicio es el siguiente:
 
