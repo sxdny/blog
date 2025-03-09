@@ -41,7 +41,7 @@ Lo que vi en el curso fué:
 
 Lo que pasa, es que no me empezé realmente a familiarizar con los contenidos del curso hasta que hice un proyecto para manejar tareas ([link](https://vercel.com/sidney-silvas-projects/angular-todos/5UV8o8G8CHszo4sSAVL5ogdi2KPM)). Todo me hizo "click" en el momento que iba aplicando mis conocimientos.
 
-Por eso, voy a explicar a continuación un poco el cómo funciona el proyecto.
+Y ahora, voy a explicar a continuación un poco el cómo funciona el proyecto.
 
 # Proyecto Angular Todos
 
@@ -49,7 +49,7 @@ La idea del proyecto es simple, gestionar tareas y tenerlas todas en un mismo si
 
 ## Gestión de las tareas con Servicios
 
-Lo primero que tenía que hacer es tener un lugar donde guardar todas y que estén disponibles en toda la aplicación.
+Lo primero que tenía que hacer es tener un lugar donde guardar las tareas en un mismo sitio y que estén disponibles en toda la aplicación.
 
 Aquí es donde uso los **Servicios**. Los servicios permiten separar la lógica de los componentes para tenerlo todo en un mismo lugar y proporcionar la información necesaria a los componentes que lo necesitan. Cuando lo hacemos, decimos que inyectamos el servicio a un componente.
 
